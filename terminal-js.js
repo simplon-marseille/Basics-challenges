@@ -1,5 +1,5 @@
-//Bienvenue à ce premier challenge.
-//Vous afficherez les resultats dans le terminal avec la commande:
+// Bienvenue à ce premier challenge.
+// Vous afficherez les resultats dans le terminal avec la commande:
 // 'node <nom du ficher>'
 // Pour que les resultats soient visible dans le terminal, vous utiliserez
 // la fonction 'console.log'
@@ -47,6 +47,20 @@ const array1 = [2, 4, 8];
 //TODO
 
 
+// Le tableau suivant indique les notes d'une promo lointaine !
+// Calculer la moyenne de cette promo et afficher le resultat
+const promo = [12, 13, 17, 3, 14, 18];
+
+
+
+// Afficher la date d'aujourd'hui sous la forme:
+// "Nous somme le [jour/mois/année] et il est [heure/minute]"
+// Afficher ensuite "bonjour" si il est en 7h du matin et 17h
+// et "bonsoir" s'il est entre 17h et 00H
+
+
+
+
 
 //les conditions
 //Déclarez une variable "age" avec la valeur de votre choix.
@@ -54,12 +68,10 @@ const array1 = [2, 4, 8];
 //peut voter si 'age' est supérieur ou égal à 18
 //ne peut pas voter si 'age' est inférieur à 18
 
-
+//-----------------------------------------------------
 
 //Créez deux variables initialisées à 3 et 4.
 //Créez une fonction qui retourne l'addition de ces deux valeurs.
-
-
 const add = (num1, num2) => {
 //TODO
 };
@@ -128,7 +140,7 @@ const capitalize = (word) => {
 
 
 //Mot inversé
-//créez une fonction qui prend en parametre une chaine de caractère.
+//créez une fonction qui prend en paramètre une chaine de caractère.
 //Cette fonction renvoie la chaine de caractère inversée.
 //ex: reverseWord('simplon') ==> 'nolpmis'
 //Aide : join(), split(), reverse()
