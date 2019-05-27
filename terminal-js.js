@@ -9,23 +9,19 @@
 // Lorque vous avez validé un exercice, mettez le en commentaire !!
 
 
-//Variables et opérateurs
-//Déclarer deux variables avec comme valeur 4 et 5
-//Créez une autre variable contenant l'addition des deux et l'afficher.
-
-
-
 
 
 //Additionnez ces deux termes et stockez le résultat dans une variable
+//puis l'afficher
 const num1 = "4";
 const num2 = "5";
 //TODO
 
 
 
-
-
+//Variables et opérateurs
+//Déclarer deux variables avec comme valeur 4 et 5
+//Créez une autre variable contenant l'addition des deux et l'afficher.
 
 
 
@@ -125,7 +121,7 @@ const capitalize = (word) => {
 
 //Odd or Even
 //Créez un fonction qui prend un nombre en parametre et qui renvoie :
-//paire sir le nombre est pair
+//paire si le nombre est pair
 //impaire si le nombre est impair
 //Tips : jetez un coup d'oeil à l'opérateur '%' dans la doc.
 
@@ -141,21 +137,6 @@ const reverseWord = (word) => {
 };
 
 
-//créez une focntion qui renvoie la somme de tableau
+//créez une fonction qui renvoie la somme de tableau
 const nombres = ["3", "5", "6", "2"];
-
-
-
-// const fs = require('fs')
-
-// // Data which will write in a file.
-// let data = "Learning how to write in a file."
-
-// // Write data in 'Output.txt' .
-// fs.writeFile('Output.txt', data, (err) => {
-
-//     // In case of a error throw err.
-//     if (err) throw err;
-// })
-
 
