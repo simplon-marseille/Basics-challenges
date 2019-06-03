@@ -1,4 +1,4 @@
-// Bienvenue à ce premier challenge.
+map// Bienvenue à ce premier challenge.
 // Vous afficherez les resultats dans le terminal avec la commande:
 // 'node <nom du ficher>'
 // Pour que les resultats soient visible dans le terminal, vous utiliserez
@@ -68,7 +68,7 @@ const promo = [12, 13, 17, 3, 14, 18];
 //peut voter si 'age' est supérieur ou égal à 18
 //ne peut pas voter si 'age' est inférieur à 18
 
-//-----------------------------------------------------
+//----------------- Fonctions -------------------
 
 //Créez deux variables initialisées à 3 et 4.
 //Créez une fonction qui retourne l'addition de ces deux valeurs.
@@ -89,13 +89,13 @@ const square = (number) => {
 
 
 
-// En utilisant la fonction 'map', mettre la chaine de
+// En utilisant la methode 'map', mettre la chaine de
 // caractère en majuscule.
 const beatles = ["paul", "john", "ringo", "george"];
 
 //Créez un tableau nommé tab dont le premier
 //élément est -2, le deuxième 3 et le troisième 4
-//Créez une fonction qui soustrait chaque éléments du tableau si celui-ci est supérieur à 0.
+//Créez une fonction qui soustrait chaque éléments du tableau au suivant.
 
 const soustrait = (tableau) => {
  //TODO
