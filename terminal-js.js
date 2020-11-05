@@ -1,46 +1,58 @@
-map// Bienvenue à ce premier challenge.
-// Vous afficherez les resultats dans le terminal avec la commande:
-// 'node <nom du ficher>'
-// Pour que les resultats soient visible dans le terminal, vous utiliserez
+// Bienvenue à ce premier challenge.
+
+// Pour que les resultats soient visible dans le navigateur, vous utiliserez
 // la fonction 'console.log'
 // ex: console.log('simplon');
-// ex: console.log(fonction());
 // ex: console.log(nom de la variable);
 // Lorque vous avez validé un exercice, mettez le en commentaire !!
 
 
 
 
-//Additionnez ces deux termes et stockez le résultat dans une variable
-//puis l'afficher
-const num1 = "4";
-const num2 = "5";
+
+//Déclarer deux variables avec comme valeur 4 et 5
+//Créez une autre variable contenant l'addition des deux et l'afficher.
 //TODO
 
 
+//Afficher la chaine de caractère suivante en majuscule
+const team = 'avengers';
+//TODO
 
-//Variables et opérateurs
-//Déclarer deux variables avec comme valeur 4 et 5
-//Créez une autre variable contenant l'addition des deux et l'afficher.
+//afficher la première lettre de la chaine de caractère suivante
+const team = 'avengers';
+//TODO
+
+//afficher la chaine de caractère suivante exepté la première lettre.
+const team = 'avengers';
+//TODO
+
+//Afficher les deux chaines suivantes dans une seule chaine de caractère (concaténation)
+const firstName = 'Tony';
+const lastName = 'Stark';
+//TODO
 
 
+//Afficher la chaine de caractère suivante avec seulement la première lettre en majuscule.
+const team = 'aveNgers';
+//=> Avengers
+//TODO
 
+//Pause ! Va boire un café ! Tu le mérites...
 
 //Les tableaux
 //Déclarez un tableau avec 5 villes
 //Afficher la ville à l'indice 3
 //Ajouter une ville au tableau
 //Supprimer la ville à l'indice 2
-
 const villes = [];
 //TODO
 
 
-
-
 //Les boucles
 //
-//Boucler sur le tableau 'array1' afin de monter chaque
+//Comme tu le sais sans doute, pour parcourir un tableau,
+// il faut bBoucler sur ce tableau. Parcours le tableau suivant afin de monter chaque
 //éléments au carré et afficher le tableau.
 
 const array1 = [2, 4, 8];
@@ -53,20 +65,23 @@ const promo = [12, 13, 17, 3, 14, 18];
 
 
 
-// Afficher la date d'aujourd'hui sous la forme:
-// "Nous somme le [jour/mois/année] et il est [heure/minute]"
-// Afficher ensuite "bonjour" si il est en 7h du matin et 17h
-// et "bonsoir" s'il est entre 17h et 00H
-
-
-
-
-
 //les conditions
+
 //Déclarez une variable "age" avec la valeur de votre choix.
 //En utilisant les conditions 'if' et 'else' affichez :
 //peut voter si 'age' est supérieur ou égal à 18
 //ne peut pas voter si 'age' est inférieur à 18
+
+
+// Afficher la date d'aujourd'hui avec javascript.
+// En utilisant les conditions 'if' et 'else' affichez :
+// "bonjour" si il est en 5h du matin et 17h
+// et "bonsoir" s'il est entre 17h et 5h du matin
+
+
+//Va reboir un café ! Bravo
+//Et pense à commit ton projet
+
 
 //----------------- Fonctions -------------------
 
