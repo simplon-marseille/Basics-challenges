@@ -19,7 +19,7 @@
 const team = 'avengers';
 //TODO
 
-//afficher la première lettre de la chaine de caractère suivante
+//Afficher la première lettre de la chaine de caractère suivante
 const team = 'avengers';
 //TODO
 
