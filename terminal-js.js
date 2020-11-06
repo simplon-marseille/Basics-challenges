@@ -6,7 +6,8 @@
 // ex: console.log(nom de la variable);
 // Lorque vous avez validé un exercice, mettez le en commentaire !!
 
-
+const pi = 3.14;
+pi = 2;
 
 
 

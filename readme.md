@@ -29,13 +29,13 @@ Dès lors que affiche 'hello world' dans la console, tu peux passer à la suite 
 
 ## Type de données
 
-number      => nombre
-bigInt      => Les grands nombres
-string      => chaine de caractère
-boolean     => vrai ou faux, 1 ou 0 , true ou false
-null        => a voir plus tard
-array       => tableau
-object      => objet
+* number      => nombre
+* bigInt      => Les grands nombres
+* string      => chaine de caractère
+* boolean     => vrai ou faux, 1 ou 0 , true ou false
+* null        => a voir plus tard
+* array       => tableau
+* object      => objet
 
 
 ## Les opérateurs
@@ -57,6 +57,23 @@ Anciennement 'var'
 
 ### let et const
 Bonne pratique : Par défaut, on déclare une variable avec "const" et si elle est amenée à changer on la passe en "let".
+
+const => La variable ne doit pas être modifiée
+let => La variable peut être modifiée
+
+Ex:
+
+```javascript
+const pi = 3.14;
+pi = 4.12;
+```
+ => `Assignment to constant variable`
+
+ ```javascript
+let pi = 3.14;
+pi = 4.12;
+```
+=> GOOD !
 
 ## Les chaines de caractère
 
@@ -154,10 +171,12 @@ if(meteo === "pluie"){
 
 Le 'if' vérifie la vérite de l'expression `meteo === "pluie"`. Si elle est vrai (true) alors cela exécute l'instruction dans la première accolade. Sinon cela exécute l'instruction dans la deuxième accolade.
 
+## Les boucles
+
 ## Sources d'aide
 
-https://stackoverflow.com/
-https://developer.mozilla.org/fr/
-=> le copain
-=> le formateur
-=> un voyante
+1. https://stackoverflow.com/
+2. https://developer.mozilla.org/fr/
+3. => le copain
+4. => le formateur
+5. => un voyante
