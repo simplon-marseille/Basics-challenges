@@ -1,4 +1,4 @@
-#cours de javascript
+# cours de javascript
 
 Utilisons notre navigateur préféré pour éxecuter notre code javascript.
 Clique droit -> inspecté -> console
@@ -26,7 +26,7 @@ Clique droit -> inspecté -> console
 `console.log("hello world");`
 Dès lors que affiche 'hello world' dans la console, tu peux passer à la suite ! pas avant.
 
-##type de données
+## type de données
 
 number      => nombre
 bigInt      => Les grands nombres
@@ -37,7 +37,7 @@ array       => tableau
 object      => objet
 
 
-##Les opérateurs
+## Les opérateurs
 
 ```javascript
 = => assignation
@@ -47,7 +47,7 @@ object      => objet
 * => multiplication
 ```
 
-##Les variables
+## Les variables
 
 Anciennement 'var'
 
@@ -56,14 +56,14 @@ Bonne pratique : Par défaut, on déclare une variable avec "const" et si elle e
 
 ## Les chaines de caractère
 
-###Déclaration et affichage d'une chaine de caractère
+### Déclaration et affichage d'une chaine de caractère
 
 ```javascript
 const ville = "Nancy";
 console.log(ville);
 ```
 
-###length
+### length
 Obtenir la longueur d'une chaine => length
 ex:
 
@@ -76,7 +76,7 @@ maChaine.length
 
 [length](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String/length)
 
-###Concaténation
+### Concaténation
 
 Concaténer signifie littéralement « mettre bout à bout ».
 En JavaScript, l’opérateur de concaténation est le signe +
@@ -90,7 +90,7 @@ const fullName = firstName + lastName
 ==> 'John Doe'
 
 
-###Interpolation
+### Interpolation
 Il s'agit d'insérer une variable dans une chaine de caractère. Pour interpoler une variable dans une chaine, il faut utiliser les backticks.
 
 *backtick sur mac => près du bouton entrée
@@ -101,7 +101,7 @@ const ville = "Masreille";
 const message = `J'habite à ${ville}`;
 ```
 
-###Accéder à un caractère
+### Accéder à un caractère
 
 ```javascript
 const ville = "Paris";
@@ -111,7 +111,7 @@ const firstLetterBis = ville[0];
 => 'P'
 
 
-##Les tableaux
+## Les tableaux
 Ou comment stocker plusieurs information dans une seule variable.
 ex:
 
@@ -133,7 +133,7 @@ Un tableau peut contenir tout type de données
 const datas = ["Paris", 4, uneVariableQuelconque, {prenom: "nicolas"}];
 ```
 
-##Les structures conditionnelles
+## Les structures conditionnelles
 [if](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/if...else)
 L'instruction if exécute une instruction si une condition donnée est vraie ou équivalente à vrai. Si la condition n'est pas vérifiée, il est possible d'utiliser une autre instruction.
 
@@ -150,7 +150,7 @@ if(meteo === "pluie"){
 
 Le 'if' vérifie la vérite de l'expression `meteo === "pluie"`. Si elle est vrai (true) alors cela exécute l'instruction dans la première accolade. Sinon cela exécute l'instruction dans la deuxième accolade.
 
-##sources d'aide
+## Sources d'aide
 
 https://stackoverflow.com/
 https://developer.mozilla.org/fr/
