@@ -1,11 +1,12 @@
-# cours de javascript
+# Cours de javascript
 
-Utilisons notre navigateur préféré pour éxecuter notre code javascript.
-Clique droit -> inspecté -> console
+Utilisons notre navigateur préféré pour exécuter notre code javascript.
+Clique droit -> inspecter -> console
 => c'est la que l'on pourra afficher notre JS.
 
 1. Créons un fichier `index.html` et `main.js`
-2. Lions nos fichiers
+2. Relions nos fichiers
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +27,7 @@ Clique droit -> inspecté -> console
 `console.log("hello world");`
 Dès lors que affiche 'hello world' dans la console, tu peux passer à la suite ! pas avant.
 
-## type de données
+## Type de données
 
 number      => nombre
 bigInt      => Les grands nombres
@@ -40,18 +41,21 @@ object      => objet
 ## Les opérateurs
 
 ```javascript
-= => assignation
-+ => addition
-- => soustraction
-/ => division
-* => multiplication
+=   => assignation
+=== => égalité
++   => addition
+-   => soustraction
+/   => division
+*   => multiplication
+>   => supérieur
+<   => inférieur
 ```
 
 ## Les variables
 
 Anciennement 'var'
 
-###let et const
+### let et const
 Bonne pratique : Par défaut, on déclare une variable avec "const" et si elle est amenée à changer on la passe en "let".
 
 ## Les chaines de caractère
