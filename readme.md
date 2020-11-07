@@ -25,7 +25,7 @@ Clique droit -> inspecter -> console
 
 3. On s'assure que les fichiers sont bien liés en éxecutant une instruction simple.
 `console.log("hello world");`
-Dès lors que affiche 'hello world' dans la console, tu peux passer à la suite ! pas avant.
+Dès lors que s'affiche 'hello world' dans la console, tu peux passer à la suite ! pas avant.
 
 ## Type de données
 
@@ -73,7 +73,7 @@ La portée d'une variable déclaré avec `const` est limitée à celle du **bloc
 
 Ex: 
 ```javascript
-() => {
+const maFonction = () => {
     if(1 === 1){
         const google = "www.google.fr";
         console.log(google);
@@ -97,7 +97,7 @@ Sa portée est limité à celle du bloc où elle est déclarée comme avec `cons
 Ex:
 
 ```javascript
-() => {
+const maFonction = () => {
     let x = 2;
     return x * x;
     //retourne 4
@@ -113,12 +113,12 @@ Pour la rendre globale, il faut simplement la définir hors de toute fonction.
 
 [Et plus encore sur les variables](https://blog.nathanaelcherrier.com/fr/apprend-javascript-variables/)
 
-## Les chaines de caractère
+## Les chaines de caractères
 
 ### Déclaration et affichage d'une chaine de caractère
 
 ```javascript
-const let = "Nancy";
+let ville = "Nancy";
 console.log(ville);
 ```
 
@@ -129,11 +129,11 @@ ex:
 ```javascript
 let maChaine = 'simplon';
 maChaine.length
+//retourne 7
 ```
-=> 7
 
 
-[length](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String/length)
+[Pour en savoir sur length](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/String/length)
 
 ### Concaténation
 
@@ -143,20 +143,19 @@ En JavaScript, l’opérateur de concaténation est le signe +
 ```javascript
 let firstName = "john";
 let lastName = "Doe";
-let fullName = firstName + lastName
+let fullName = firstName + ' ' +lastName
+//==> 'John Doe'
 ```
-
-==> 'John Doe'
 
 
 ### Interpolation
 Il s'agit d'insérer une variable dans une chaine de caractère. Pour interpoler une variable dans une chaine, il faut utiliser les backticks.
 
-*backtick sur mac => près du bouton entrée
-backtick sur pc  => altgr 7 (en haut du clavier)...*
+* backtick sur mac => près du bouton entrée
+* backtick sur pc  => altgr 7 (en haut du clavier)...*
 
 ```javascript
-let ville = "Masreille";
+let ville = "Marseille";
 let message = `J'habite à ${ville}`;
 ```
 
@@ -166,13 +165,13 @@ let message = `J'habite à ${ville}`;
 let ville = "Paris";
 let firstLetter = ville.charAt(0);
 let firstLetterBis = ville[0];
+//=> 'P'
 ```
-=> 'P'
 
 
 ## Les tableaux
 Ou comment stocker plusieurs information dans une seule variable.
-ex:
+Ex:
 
 ```javascript
 const villes = ["Paris", "Marseille", "Brest"];
@@ -183,8 +182,9 @@ J'accède au élément du tableau
 ```javascript
 const villes = ["Paris", "Marseille", "Brest"];
 let firstElement = villes[0];
+//=> 'Paris'
 ```
-=> 'Paris'
+
 Chaque élément du tableau possède un indice. Il s'agit d'une valeur numérique indiquant la position d'un élément. Dans notre exemple 'Paris' est à l'indice 0 et 'Marseille' est à l'indice 1. Un tableau commence toujours avec un indice à 0 !
 
 Un tableau peut contenir tout type de données
@@ -193,8 +193,9 @@ const datas = ["Paris", 4, uneVariableQuelconque, {prenom: "nicolas"}];
 ```
 
 ## Les structures conditionnelles
-[if](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/if...else)
-L'instruction if exécute une instruction si une condition donnée est vraie ou équivalente à vrai. Si la condition n'est pas vérifiée, il est possible d'utiliser une autre instruction.
+
+####[if](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/if...else)
+L'instruction `if` exécute une instruction si une condition donnée est vraie ou équivalente à vrai. Si la condition n'est pas vérifiée, il est possible d'utiliser une autre instruction.
 
 Ex:
 
