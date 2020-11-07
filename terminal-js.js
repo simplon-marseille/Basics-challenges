@@ -6,8 +6,6 @@
 // ex: console.log(nom de la variable);
 // Lorque vous avez validé un exercice, mettez le en commentaire !!
 
-const pi = 3.14;
-pi = 2;
 
 
 
@@ -17,25 +15,25 @@ pi = 2;
 
 
 //Afficher la chaine de caractère suivante en majuscule
-const team = 'avengers';
+let team = 'avengers';
 //TODO
 
 //Afficher la première lettre de la chaine de caractère suivante
-const team = 'avengers';
+let team = 'avengers';
 //TODO
 
-//afficher la chaine de caractère suivante exepté la première lettre.
-const team = 'avengers';
+//afficher la chaine de caractère suivante excepté la première lettre.
+let team = 'avengers';
 //TODO
 
 //Afficher les deux chaines suivantes dans une seule chaine de caractère (concaténation)
-const firstName = 'Tony';
-const lastName = 'Stark';
+let firstName = 'Tony';
+let lastName = 'Stark';
 //TODO
 
 
 //Afficher la chaine de caractère suivante avec seulement la première lettre en majuscule.
-const team = 'aveNgers';
+let team = 'aveNgers';
 //=> Avengers
 //TODO
 
@@ -46,15 +44,14 @@ const team = 'aveNgers';
 //Afficher la ville à l'indice 3
 //Ajouter une ville au tableau
 //Supprimer la ville à l'indice 2
-const villes = [];
 //TODO
 
 
 //Les boucles
 //
 //Comme tu le sais sans doute, pour parcourir un tableau,
-// il faut bBoucler sur ce tableau. Parcours le tableau suivant afin de monter chaque
-//éléments au carré et afficher le tableau.
+//il faut boucler sur ce tableau. Parcours le tableau suivant afin de monter chaque
+//élément au carré et affiche le tableau.
 
 const array1 = [2, 4, 8];
 //TODO
@@ -109,21 +106,21 @@ const square = (number) => {
 // caractère en majuscule.
 const beatles = ["paul", "john", "ringo", "george"];
 
+
 //Créez un tableau nommé tab dont le premier
-//élément est -2, le deuxième 3 et le troisième 4
-//Créez une fonction qui soustrait chaque éléments du tableau au suivant.
-
-const soustrait = (tableau) => {
- //TODO
-};
+//élément est 2, le deuxième 3 et le troisième 4.
+//Créez une fonction qui renvoit la somme des éléments du tableau.
 
 
+//Tri à bulle
+//Classé les éléments du tableau suivant par ordre croissant.
+//Affichez le tableau classé.
 
 
 
 
 //Créez une fonction qui renvoie la somme de chaque éléments du
-//tableau si celui-ci est supérieur à 0.
+//tableau si celui-ci est positif.
 const array2 = [-2, 4, -5, 3, 6];
 const addPositiveNumber = (tableau) => {
  //TODO
@@ -165,6 +162,7 @@ const reverseWord = (word) => {
 };
 
 
-//créez une fonction qui renvoie la somme de tableau
+//Reprendre la fonction qui permet de calculer la somme d'un tableau
+//Le tableau est le suivant : 
 const nombres = ["3", "5", "6", "2"];
 

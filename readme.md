@@ -29,14 +29,14 @@ Dès lors que affiche 'hello world' dans la console, tu peux passer à la suite 
 
 ## Type de données
 
-* number      => nombre
-* bigInt      => Les grands nombres
-* string      => chaine de caractère
-* boolean     => vrai ou faux, 1 ou 0 , true ou false
-* null        => a voir plus tard
-* array       => tableau
-* object      => objet
-
+* Number      => nombre `3.14`
+* BigInt      => Les grands nombres `9007199254740991`
+* String      => chaine de caractère `hello world`
+* Boolean     => vrai ou faux, 1 ou 0 , `true` ou `false`
+* Array       => tableau `[3, "trois", "3"]`
+* Object      => objet `{firstName: "Tony", lastName: "Stark", nickName: "Ironman"}`
+* Null        => La variable existe mais n'a ni type ni valeur `let toto = null`
+* Undefined   => La variable n'existe pas, n'a pas été défini et n'a jamais été initialisé
 
 ## Les opérateurs
 
@@ -56,31 +56,69 @@ Dès lors que affiche 'hello world' dans la console, tu peux passer à la suite 
 Anciennement 'var'
 
 ### let et const
-Bonne pratique : Par défaut, on déclare une variable avec "const" et si elle est amenée à changer on la passe en "let".
 
-const => La variable ne doit pas être modifiée
-let => La variable peut être modifiée
+Il faut identifier les valeurs qui vont varier de celles qui restrons constante et ainsi les déclarer avec `const` celles qui ne changeront pas durant toute la durée du programme et `let` celles qui seront amenées à être modifié.
+
+#### const => La variable ne doit/peut pas être modifiée
 
 Ex:
 
 ```javascript
 const pi = 3.14;
 pi = 4.12;
+ //Retourne l'erreur : `Assignment to constant variable`
 ```
- => `Assignment to constant variable`
+
+La portée d'une variable déclaré avec `const` est limitée à celle du **bloc** où elle est déclarée. Un bloc en Javascript, c’est ce qu’on retrouve entre accolades : une comparaison en if, une boucle while etc…
+
+Ex: 
+```javascript
+() => {
+    if(1 === 1){
+        const google = "www.google.fr";
+        console.log(google);
+        //retourne www.google.fr
+    }
+}
+console.log(google);
+//retourne une erreur: ReferenceError: x is not defined 
+//Car google n'existe que dans le bloc courant
+```
+
+#### let => La variable peut être modifiée
 
  ```javascript
-let pi = 3.14;
-pi = 4.12;
+let firstName = "Eric";
+firstName = "Bruno";
 ```
 => GOOD !
+
+Sa portée est limité à celle du bloc où elle est déclarée comme avec `const`.
+Ex:
+
+```javascript
+() => {
+    let x = 2;
+    return x * x;
+    //retourne 4
+}
+console.log(x);
+// Retourne une erreur:  ReferenceError: x is not defined 
+// x n'existe pas hors de la fonction
+```
+
+Pour la rendre globale, il faut simplement la définir hors de toute fonction.
+
+[Pour plus d'informations...](https://www.kaherecode.com/tutorial/javascript-variables-var-let-ou-const).
+
+[Et plus encore sur les variables](https://blog.nathanaelcherrier.com/fr/apprend-javascript-variables/)
 
 ## Les chaines de caractère
 
 ### Déclaration et affichage d'une chaine de caractère
 
 ```javascript
-const ville = "Nancy";
+const let = "Nancy";
 console.log(ville);
 ```
 
@@ -89,7 +127,7 @@ Obtenir la longueur d'une chaine => length
 ex:
 
 ```javascript
-const maChaine = 'simplon';
+let maChaine = 'simplon';
 maChaine.length
 ```
 => 7
@@ -103,9 +141,9 @@ Concaténer signifie littéralement « mettre bout à bout ».
 En JavaScript, l’opérateur de concaténation est le signe +
 
 ```javascript
-const firstName = "john";
-const lastName = "Doe";
-const fullName = firstName + lastName
+let firstName = "john";
+let lastName = "Doe";
+let fullName = firstName + lastName
 ```
 
 ==> 'John Doe'
@@ -118,16 +156,16 @@ Il s'agit d'insérer une variable dans une chaine de caractère. Pour interpoler
 backtick sur pc  => altgr 7 (en haut du clavier)...*
 
 ```javascript
-const ville = "Masreille";
-const message = `J'habite à ${ville}`;
+let ville = "Masreille";
+let message = `J'habite à ${ville}`;
 ```
 
 ### Accéder à un caractère
 
 ```javascript
-const ville = "Paris";
-const firstLetter = ville.charAt(0);
-const firstLetterBis = ville[0];
+let ville = "Paris";
+let firstLetter = ville.charAt(0);
+let firstLetterBis = ville[0];
 ```
 => 'P'
 
@@ -144,7 +182,7 @@ J'accède au élément du tableau
 
 ```javascript
 const villes = ["Paris", "Marseille", "Brest"];
-const firstElement = villes[0];
+let firstElement = villes[0];
 ```
 => 'Paris'
 Chaque élément du tableau possède un indice. Il s'agit d'une valeur numérique indiquant la position d'un élément. Dans notre exemple 'Paris' est à l'indice 0 et 'Marseille' est à l'indice 1. Un tableau commence toujours avec un indice à 0 !
@@ -161,7 +199,7 @@ L'instruction if exécute une instruction si une condition donnée est vraie ou 
 Ex:
 
 ```javascript
-const meteo = "pluie"
+let meteo = "pluie"
 if(meteo === "pluie"){
     console.log("Prendre un parapluie");
 }else{
@@ -169,9 +207,63 @@ if(meteo === "pluie"){
 }
 ```
 
-Le 'if' vérifie la vérite de l'expression `meteo === "pluie"`. Si elle est vrai (true) alors cela exécute l'instruction dans la première accolade. Sinon cela exécute l'instruction dans la deuxième accolade.
+Le 'if' vérifie la vérité de l'expression `meteo === "pluie"`. Si elle est vrai (true) alors cela exécute l'instruction dans la première accolade. Sinon cela exécute l'instruction dans la deuxième accolade.
 
 ## Les boucles
+
+**Une boucle sert à répéter une ou plusieurs instructions plusieurs fois.**
+
+On distingue 3 types de boucles
+
+### for
+
+ C’est la boucle la plus basique en JavaScript et elle est très polyvalente.
+
+Dans cet exemple, nous réglons `index = 0` avant le début de notre boucle. Nous continuerons à boucler aussi longtemps que `index < 3`, et chaque itération de la boucle augmentera `index` de un. Enfin, entre accolades se trouve le code qui sera exécuté à chaque itération de la boucle.
+
+```javascript
+for(let index = 0; index < 3; index++){
+    console.log(index);
+}
+//retourne
+//0
+//1
+//2
+```
+### while (tant que...)
+
+Il faut se dire : Tant que `x` est inférieur à 3, l'instruction sera répétée. La variable `x` est incrémetée de 1 et sert de condition de sortie de la boucle. Sans elle, c'est une boucle infinie => plantage du programme.
+
+```javascript
+let x = 0;
+while( x < 3){
+    x = x + 1;
+    //condition de sortie de boucle
+    console.log("L'instruction sera répété " + x + " fois");
+    //retourne:
+    //L'instruction sera répété 1 fois
+    //L'instruction sera répété 2 fois
+    //L'instruction sera répété 3 fois
+}
+```
+
+### forEach
+
+
+Si nous voulons appliquer un traitement sur les éléments d'un tableau, la bonne pratique consiste à boucler sur ce tableau afin d'accéder aux éléments de celui-ci. La methode **forEach** permet d’itérer sur les propriétés d’un tableau 
+
+Ex:
+```javascript
+const villes = ["Paris", "Lille", "Marseille", "Brest"];
+villes.forEach((element) => {
+    console.log(element.toUpperCase());
+});
+//retourne:
+//PARIS
+//LILLE
+//MARSEILLE
+//BREST
+```
 
 ## Sources d'aide
 
@@ -179,4 +271,4 @@ Le 'if' vérifie la vérite de l'expression `meteo === "pluie"`. Si elle est vra
 2. https://developer.mozilla.org/fr/
 3. => le copain
 4. => le formateur
-5. => un voyante
+5. => une voyante
