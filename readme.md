@@ -81,7 +81,7 @@ const maFonction = () => {
     }
 }
 console.log(google);
-//retourne une erreur: ReferenceError: x is not defined 
+//retourne une erreur: ReferenceError: google is not defined 
 //Car google n'existe que dans le bloc courant
 ```
 
@@ -167,7 +167,7 @@ let firstLetter = ville.charAt(0);
 let firstLetterBis = ville[0];
 //=> 'P'
 ```
-
+[Voici les methodes permettant de modifier une chaine de caratères](https://www.w3schools.com/jsref/jsref_obj_string.asp)
 
 ## Les tableaux
 Ou comment stocker plusieurs information dans une seule variable.
@@ -194,7 +194,7 @@ const datas = ["Paris", 4, uneVariableQuelconque, {prenom: "nicolas"}];
 
 ## Les structures conditionnelles
 
-####[if](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/if...else)
+#### [if](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Instructions/if...else)
 L'instruction `if` exécute une instruction si une condition donnée est vraie ou équivalente à vrai. Si la condition n'est pas vérifiée, il est possible d'utiliser une autre instruction.
 
 Ex:
