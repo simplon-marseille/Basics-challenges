@@ -174,7 +174,11 @@ const nombres = ["3", "5", "6", "2"];
 
 
 
+//Tri à bulle
+//Classé les éléments du tableau suivant par ordre croissant.
+//Affichez le tableau classé.
 
+const aTrier = [3, 2, 6, 4, 8, 10];
 
 //Coder la fonction puissance qui prend en paramètre deux arguments (nombre et puissance).
 //La fonction devra renvoyer le nombre monté à la puissance
@@ -189,13 +193,6 @@ const nombres = ["3", "5", "6", "2"];
 // partie.
 //Bonus : Le jeu doit également rappeler au joueur les 
 // nombres déjà proposés
-
-
-//Tri à bulle
-//Classé les éléments du tableau suivant par ordre croissant.
-//Affichez le tableau classé.
-
-const aTrier = [3, 2, 6, 4, 8, 10];
 
 
 // La suite de Fibonacci est une suite d'entiers dans laquelle chaque terme est la somme des deux 

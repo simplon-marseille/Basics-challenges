@@ -266,6 +266,57 @@ villes.forEach((element) => {
 //BREST
 ```
 
+## Les fonctions
+
+**Une fonction** effectue une série d'instructions précises et prend une/des **valeur(s) en entrée** et retourne ou non un **résultat en sortie**.
+**Elle présente l'avantage de na pas avoir à répéter du code.**
+
+La syntaxe est la suivante:
+
+
+Nous allons déclarer une fonction nommée `bonjour`. Elle prend en argument un paramètre `prenom`. 
+Ce paramètre est une variable qui ne sera utilisable (visible) uniquement dans le périmètre de la fonction. Dans ce cas ci, notre fonction affiche une chaine de caractères.
+Puis nous appelons notre fonction afin qu'elle soit exécutée: `bonjour('Nicolas');`.
+**Une fonction est toujours définie avant son appel.**
+
+Avant ES6:
+
+```javascript
+
+function bonjour(prenom){
+    console.log(`Bonjour, je m'appelle ${prenom}`);
+}
+
+bonjour('Nicolas');
+bonjour('Pierre');
+
+```
+
+ES6 (on parle de fonction fléchée)
+
+```javascript
+
+const bonjour = (prenom) => {
+    console.log(`Bonjour, je m'appelle ${prenom}`);
+}
+
+bonjour('Nicolas');
+bonjour('Pierre');
+
+```
+
+Dans la plupart des cas, une fonction renvoie un résulat:
+
+```javascript
+const bonjour = (prenom) => {
+    return `Bonjour, je m'appelle ${prenom}`;
+}
+
+console.log(bonjour('Nicolas'));
+```
+
+Cela permet des traiter le résultat dans notre algorithme ultérieurement.
+
 ## Sources d'aide
 
 1. https://stackoverflow.com/
